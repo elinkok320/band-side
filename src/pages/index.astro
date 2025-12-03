@@ -1,11 +1,30 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro"
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Home | My Favourite Band">
+	<main id="homepage">
+		<div id="index-home">
+			<h1><a href="about">DIOR</a></h1>
+			<img src="../../public/home.png">
+		</div>
+
+		<div id="index-tour">
+			<h1>Latest News</h1>
+			<a href="tour"><img src="../../public/poster.webp"></a>
+		</div>
+
+		<div id="index-music">
+			<h1>Music</h1>
+			<div id="flexbox">
+				<a href="https://www.youtube.com/watch?v=m1ifjumQz-I&list=RDm1ifjumQz-I&start_radio=1"><img src="phone.jpg"></a>
+				<a href="https://www.youtube.com/watch?v=zHfncpPpA0k&list=RDzHfncpPpA0k&start_radio=1"><img src="save-love.jpg"></a>
+				<a href="https://www.youtube.com/watch?v=wlSvIL-H1GQ&list=RDwlSvIL-H1GQ&start_radio=1"><img src="ghana.jpeg"></a>
+			</div>
+			<h3><a href="playlist"> Explore For More</a></h3>
+		</div>
+
+
+	
+	</main>
 </Layout>
