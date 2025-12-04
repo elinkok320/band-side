@@ -1,9 +1,100 @@
 ---
 import Layout from "../layouts/Layout.astro"
+
 ---
 
 <Layout title="PLAYLIST | DIOR">
     <main id="playlist">
-        <h1>Dior Playlist</h1>
+            <h1>LISTEN NOW</h1>
+        <div id="card">
+            <div id="playlist-1">
+                <div class="playlist-heading">
+                    <img src="dior-playlist.jpg">
+                    <div id="playlist-tool">
+                        <h1>DIOR 大颖</h1>
+                        <div id="playlist-button">
+                            <button class="button">PLAY</button>
+                            <button class="button">REPEAT</button>
+                            <button class="button" id="shuffle">SHUFFLE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <table id="dior-playlist">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th class="title">Title</th>
+                            <th class="singer">Singer</th>
+                            <th class="duration">Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="single-song">
+                            <td><img src="ghana.jpeg" class="song"></td>
+                            <td class="title">Divorce in Ghana | <br>在加纳共和国离婚</td>
+                            <td class="singer">Firdhaus / Dior</td>
+                            <td class="duration">4:23</td>
+                        </tr>
+                        <tr class="single-song">
+                            <td><img src="save-love.jpg"></td>
+                            <td class="title">Save Some | <br>节约用爱</td>
+                            <td class="singer">Dior</td>
+                            <td class="duration">4:10</td>
+                        </tr>
+                        <tr class="single-song">
+                            <td><img src="phone.jpg"></td>
+                            <td class="title">If That Call Had Been Answered | <br>如果那通电话有接通</td>
+                            <td class="singer">Dior</td>
+                            <td class="duration">4:33</td>
+                        </tr>
+                        <tr class="single-song">
+                            <td><img src="see-you.png"></td>
+                            <td class="title">See You | <br>有天会再相见</td>
+                            <td class="singer">Dior</td>
+                            <td class="duration">5:42</td>
+                        </tr>
+                        <tr class="single-song">
+                            <td><img src="forgive.jpg"></td>
+                            <td class="title">How To Forgive | <br>该怎么原谅</td>
+                            <td class="singer">Dior</td>
+                            <td class="duration">4:13</td>
+                        </tr>
+                        <tr class="single-song">
+                            <td><img src="proud.jpg"></td>
+                            <td class="title">Proud of Myself | <br>自己的骄傲</td>
+                            <td class="singer">Dior</td>
+                            <td class="duration">4:17</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="favourite-list-edit">
+                    <h1>Create Your Personal Playlist</h1>
+                    <p>Add your Favourite Song to The Playlist</p>
+
+                    <form>
+                        <div class="song-info">
+                            <label>Song</label>
+                            <input type="text" id="song-title" placeholder="Title">
+                        </div>
+
+                        <div class="song-info">
+                            <label>Singer</label>
+                            <input type="text" id="singer-name" placeholder="Singer's Name">
+                        </div>
+
+                        <div class="song-info">
+                            <label>Duration</label>
+                            <input type="text" id="song-duration" placeholder="Song's Duration">
+                        </div>
+
+                        <input type="submit" value="Add Song" id="add-song">
+                    </form>
+            </div>
+        </div>
     </main>
+
+<script type="module" src="/src/scripts/shuffle.js"></script>
 </Layout>
+
