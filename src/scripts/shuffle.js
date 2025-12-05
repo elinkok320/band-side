@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded",()=>{
 document.addEventListener("DOMContentLoaded",()=>{
     const SongTitle= document.getElementById("song-title");
     const SingerName= document.getElementById("singer-name");
-    const SongDuration= document.getElementById("song-duration")
     const SongButton= document.getElementById("add-song");
     const TableBody= document.querySelector("#dior-playlist tbody");
 
@@ -25,9 +24,8 @@ document.addEventListener("DOMContentLoaded",()=>{
     
         const SongInput= SongTitle.value.trim();
         const SingerInput= SingerName.value.trim();
-        const DurationInput= SongDuration.value.trim();
 
-        if(!SongInput || !SingerInput || !DurationInput){
+        if(!SongInput || !SingerInput){
             return;
         }
     const NewSong= document.createElement("tr");
@@ -37,7 +35,6 @@ document.addEventListener("DOMContentLoaded",()=>{
         <td></td>
         <td class="title">${SongInput}</td>
         <td class="singer">${SingerInput}</td>
-        <td class="duration“>${DurationInput}</td>
         `;
     TableBody.appendChild(NewSong);
 
